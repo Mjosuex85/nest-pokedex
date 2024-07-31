@@ -28,9 +28,7 @@ import { JoiValidatorSchema } from './config/joi.config';
     }),
 
     // ESTO ES EL "ORM" LA CONEXIÓN A LA BASE DE DATOS, SEA LOCAL O EN LA NUBE DEPENDIENDO DE EL URL que se le pase
-    MongooseModule.forRoot(process.env.MONGODB, {
-      dbName: 'pokemondb'
-    }),
+    MongooseModule.forRoot(process.env.MONGODB),
     
     CharactersModule,
     PokemonModule,
