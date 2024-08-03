@@ -18,7 +18,7 @@ import { JoiValidatorSchema } from './config/joi.config';
     // TODO: ESTO ES COMO EL DOTENV
     ConfigModule.forRoot({
       // TODO: ESTO CARGA LA CONFIGURACIÓN QUE CREO PARA LAS VARIABLES DE ENTORNO
-      // LOAD: para todo el modulo de nest, y validationSchema más arriba
+      // LOAD: para todo el modulo de nest, y validationSchema un paso más arriba de la aplicación de nest
       load: [ EnvConfiguration ],
       validationSchema: JoiValidatorSchema
     }),
